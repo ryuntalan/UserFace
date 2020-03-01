@@ -1,0 +1,252 @@
+// remember to npm run sass to compile scss to css
+//go to config.scss and change colors if needed (1/29/2020)
+// add mobile look edits (2/5/20200
+@import "config";
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Regular.eot");
+  src: local("fonts/Cera Pro Regular"), local("CeraPro-Regular"),
+    url("fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Regular.woff") format("woff"),
+    url("fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  //used for stick footers
+  min-height: calc(100vh - 60px);
+}
+
+body {
+  background: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  position: absolute;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Cera Pro", "Helvetica", "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+hr.line {
+  width: 1100px;
+  border-top: 2px solid $secondary-color;
+  opacity: 0.2;
+  margin-bottom: 20px;
+}
+
+//navbar
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darken($background-color, 2);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: $text-color;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  @include easeOut();
+
+  &.contact {
+    margin-left: -5px;
+  }
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.nav-btn {
+  margin: 8px 100px 0px 0px;
+}
+
+.nav-logo {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: -4px; //use to adjust height of logo
+  margin-left: 100px;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 200;
+  text-align: center;
+
+  &.lg-heading {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &.md-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 250;
+  }
+
+  &.sm-heading {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 250;
+  }
+}
+
+.sect {
+  padding-top: 100px;
+}
+
+.space {
+  margin-bottom: 400px;
+}
+
+//About
+
+.about-title {
+  margin-top: 150px;
+}
+
+.content {
+  width: 500px;
+  margin: auto;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.learn-btn {
+  text-decoration: none;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
+  background-color: $btn-color;
+  border-color: transparent;
+  color: $primary-color;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid $primary-color;
+  width: 200px;
+  padding: 8px 10px;
+  margin: 20px auto;
+
+  &:hover {
+    background-color: $tertiary-color;
+    cursor: pointer;
+  }
+}
+
+//Demo
+
+.detect {
+  width: 800px;
+  font-size: 40px;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  margin: auto;
+  border: 2px solid $secondary-color;
+}
+
+.camera {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+//Contact
+
+#contact h2 {
+  margin-top: 20px;
+}
+form {
+  text-align: center;
+  @include easeInOut();
+}
+
+.form-control {
+  width: 600px;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 250;
+  padding: 5px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: $btn-color;
+  border-color: transparent;
+  color: $primary-color;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: 2px solid $primary-color;
+  width: 200px;
+
+  &:hover {
+    background-color: $tertiary-color;
+    cursor: pointer;
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  background-color: darken($background-color, 2);
+  font-size: 14px;
+  padding: 1rem;
+  color: $text-color;
+  height: 60px;
+}
+
+@import "mobile";

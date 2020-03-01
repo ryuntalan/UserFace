@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://use.fontawesome.com/358a83a1a1.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/hwt3keg.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>SLO Hacks Test</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <meta
+      name="description"
+      content="Hi my name is Ryan and this is my SLO Hacks project"
+    />
+    <meta name="keywords" content="Cal, Poly, SLO, SLOHACKS" />
+    <meta name="author" content="Ryan Untalan" />
+    <!--Add favicon below-->
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+
+  </head>
+
+  <body>
+    <header class="navbar">
+      <!--specify nav-link later if needed-->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <div class="nav-btn">
+            <li class="nav-item">
+              <a href="#contact" class="nav-link contact">
+                Contact
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#demo" class="nav-link">
+                Demo
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                About
+              </a>
+            </li>
+          </div>
+          <li style="float: left" class="nav-item">
+            <a class="nav-link" href="index.html">
+              <div class="nav-logo">UserFace</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sect" id="about">
+      <div>
+        <h1 class="lg-heading about-title">About</h1>
+        <p class="content">
+          Hello! Welcome to UserFace. An online platform that allows you to record and measure your users emotional facial expressions when interacting with your product.
+        </p>
+
+        <a class="learn-btn" href="#demo"
+          ><button class="learn-more">Learn More</button></a
+        >
+      </div>
+    </section>
+
+    <div class="space"></div>
+
+    <section class="sect" id="demo">
+      <h1 class="lg-heading">Demo</h1>
+      <input class=" learn-more" type="button" onclick="startVideo()" value="Start" />
+
+      <video id="video" width="720" height="560" autoplay muted></video>
+      
+    </section>
+
+     <div class="space"></div>
+
+    <section class="sect" id="contact">
+        <div>
+          <h1 class="lg-heading">Contact</h1>
+          <h2 class="md-heading">Interested in Learning More?</h2>
+          <h3 class="sm-heading">Send us a message.</h4>
+    
+          <div class="contact-form">
+            <form
+              id="contact-form"
+              method="POST"
+              action="https://formspree.io/xleeppkp"
+            >
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+                required
+              /><br />
+    
+              <input
+                name="_replyto"
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              /><br />
+    
+              <textarea
+                name="message"
+                class="form-control"
+                placeholder="Message"
+                rows="4"
+                required
+              ></textarea>
+              <br />
+    
+              <input
+                type="submit"
+                class="form-control submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
+        </main>
+        </div>
+      </section>
+  
+      <footer>
+        &copy; Project Name
+      </footer>
+  </body>
+</html>
