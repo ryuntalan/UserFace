@@ -117,6 +117,14 @@ h3 {
 .space {
   margin-bottom: 400px; }
 
+.graphgif {
+  margin-top: -100px;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  z-index: -5;
+  position: relative; }
+
 .about-title {
   margin-top: 150px; }
 
@@ -141,13 +149,14 @@ h3 {
   border: 2px solid #ffffff;
   width: 200px;
   padding: 8px 10px;
-  margin: 20px auto; }
+  margin: 20px auto;
+  z-index: 2; }
   .learn-more:hover {
     background-color: #52658f;
     cursor: pointer; }
 
 #demo.sect {
-  height: 660px; }
+  height: 1097px; }
 
 .camera {
   display: flex;

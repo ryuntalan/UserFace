@@ -150,6 +150,15 @@ h3 {
 
 //About
 
+.graphgif {
+  margin-top: -100px;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  z-index: -5;
+  position: relative;
+}
+
 .about-title {
   margin-top: 150px;
 }
@@ -178,6 +187,7 @@ h3 {
   width: 200px;
   padding: 8px 10px;
   margin: 20px auto;
+  z-index: 2;
 
   &:hover {
     background-color: $tertiary-color;
@@ -188,7 +198,7 @@ h3 {
 //Demo
 
 #demo.sect {
-  height: 660px;
+  height: 1097px;
 }
 
 .camera {
