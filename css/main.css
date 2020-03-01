@@ -104,6 +104,12 @@ h3 {
     font-size: 1.7rem;
     margin-bottom: 1rem;
     font-weight: 250; }
+  h1.exsm-heading,
+  h2.exsm-heading,
+  h3.exsm-heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 250; }
 
 .sect {
   padding-top: 100px; }
