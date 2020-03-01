@@ -39,6 +39,8 @@ body {
 
 canvas {
   position: absolute;
+  height: 475px;
+  width: 720px;
 }
 
 * {
@@ -179,14 +181,8 @@ h3 {
 
 //Demo
 
-.detect {
-  width: 800px;
-  font-size: 40px;
-  display: flex;
-  padding: 50px;
-  justify-content: center;
-  margin: auto;
-  border: 2px solid $secondary-color;
+#demo.sect {
+  height: 660px;
 }
 
 .camera {
