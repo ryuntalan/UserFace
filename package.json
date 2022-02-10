@@ -12,6 +12,6 @@
     "@tensorflow/tfjs-node": "^1.5.2",
     "canvas": "^2.6.1",
     "face-api.js": "^0.22.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
